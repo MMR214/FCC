@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   background: linear-gradient(to bottom, #2c1c46, #383837);
-  background-image: url("/assets/images/Hero-bg.jpg");
+  background-image: url("../../assets/images/Hero-bg.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -54,7 +54,7 @@
 .welcome {
   margin-top: -101px;
   margin-bottom: 0px;
-  background-image: url("/assets/images/BGvector-sm.png");
+  background-image: url("../../assets/images/BGvector-sm.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;

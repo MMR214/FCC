@@ -2,7 +2,7 @@
   position: relative;
   height: 395px;
   display: flex;
-  background-image: url("/assets/images/Events-Hero.png");
+  background-image: url("../../assets/images/Events-Hero.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

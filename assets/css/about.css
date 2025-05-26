@@ -3,7 +3,7 @@
   height: 395px;
   display: flex;
   background: linear-gradient(to bottom, #2c1c46, #383837);
-  background-image: url("/assets/images/about-bg.jpg");
+  background-image: url("../../assets/images/about-bg.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -250,7 +250,7 @@
 
 .history-section {
   background-image: linear-gradient(rgba(154, 97, 7, 0.5), rgba(0, 0, 0, 0.4)),
-    url("/assets/images/about-bg.jpg");
+    url("../../assets/images/about-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
