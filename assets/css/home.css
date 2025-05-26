@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(to bottom, #2c1c46, #383837);
+  background-image: url("/assets/images/Hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-top: -260px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 28, 70, 0.5) 30%,
+    rgba(150, 150, 149, 0.2) 70%
+  );
+  pointer-events: none;
+}
+
+.intro {
+  background-color: #fff8e1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-box {
+  max-width: 800px;
+  text-align: center;
+  background-color: #fff3cd;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.logo-anniv {
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.welcome {
+  margin-top: -101px;
+  margin-bottom: 0px;
+  background-image: url("/assets/images/BGvector-sm.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 40px 0;
+}
+
+.fcc-welcome {
+  background-color: #fcefd8;
+  padding: 2rem 1rem;
+}
+
+.welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.welcome-text {
+  flex: 1 1 60%;
+  padding: 2rem 4rem;
+  font-size: 1.4rem;
+  color: var(--brown-dark);
+  line-height: 1.6;
+}
+
+.statement {
+  margin-left: -50px;
+  margin-top: 80px;
+  position: relative;
+  background-color: var(--beige-light);
+}
+
+.ministries {
+  margin-right: -80px;
+  margin-top: 50px;
+  position: relative;
+  color: var(--beige-light);
+  background-color: var(--purple);
+  z-index: 1;
+}
+
+.welcome-logo {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.welcome-logo img {
+  max-width: 100%;
+  height: auto;
+}

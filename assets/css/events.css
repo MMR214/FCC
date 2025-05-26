@@ -1,0 +1,362 @@
+.hero-inner {
+  position: relative;
+  height: 395px;
+  display: flex;
+  background-image: url("/assets/images/Events-Hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.hero-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 28, 70, 0.5) 30%,
+    rgba(150, 150, 149, 0.2) 70%
+  );
+  pointer-events: none;
+}
+
+.breadcrumbs {
+  margin-top: 250px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.breadcrumbs span {
+  color: #f3e8d4;
+}
+
+.page-title {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--beige);
+  margin-top: 10px;
+}
+.section {
+  padding: 0px 20px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0px;
+  text-align: left;
+  padding: 20px;
+  border-left: 1px solid #f5e5ca;
+  line-height: 1.7rem;
+}
+
+.get-connected-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.connected-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.connected-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.connected-text {
+  flex: 1.5;
+  min-width: 280px;
+}
+
+.connected-text h2 {
+  color: #a06b00;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.connected-text h2::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #a06b00;
+  margin-bottom: 10px;
+}
+
+.connected-text p {
+  line-height: 1.7;
+  font-size: var(--font-lg);
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .get-connected-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
+.ministries-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.ministry-card {
+  background: #fff;
+  border: 5px solid #f7f4ec;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.ministry-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.ministry-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.ministry-name {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.ministry-card:hover .ministry-name {
+  color: #a06b00;
+}
+
+.ministry-page {
+  background-color: var(--beige-light);
+}
+
+.section-purpose {
+  margin: auto;
+  background-color: var(--beige-light);
+}
+
+.purpose-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.purpose-box {
+  flex: 1;
+  padding: 60px 0px;
+}
+
+.purpose-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.purpose-box p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .purpose-grid {
+    flex-direction: column;
+  }
+}
+
+.section {
+  background-color: var(--cream-light);
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: var(--font-md);
+}
+
+.card-subtitle {
+  font-size: var(--font-xs);
+  margin-top: 5px;
+  color: #444;
+}
+
+.card-text {
+  font-size: var(--font-sm);
+  margin-top: 10px;
+  color: var(--font-dark);
+  line-height: 1.6;
+}
+
+.card-link {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  color: #a06b00;
+  border-color: #a06b00;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 60px 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.church-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: var(--cream);
+}
+
+.events-section {
+  background-color: var(--cream);
+  padding: 2rem;
+}
+
+.upcoming-events {
+  margin: 0;
+  padding: 0.2rem 1rem;
+}
+.welcome-text p {
+  font-size: var(--font-md);
+  color: var(--brown-dark);
+  line-height: 1.6;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.event-list li {
+  border-bottom: 1px solid #ddd;
+  font-size: var(--font-md);
+}
+
+.event-list li:last-child {
+  border-bottom: none;
+}
+
+.event-link {
+  display: block;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: #4a3f35;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.event-link:hover,
+.event-link.active {
+  background-color: var(--beige-light);
+  color: var(--brown);
+  padding: 1rem 1rem;
+}
+
+.event-list .date {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+.view-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  color: #4a3f35;
+  font-size: var(--font-xs);
+  text-decoration: underline;
+  transition: color 0.3s;
+  text-decoration-thickness: 2px; /* Thickness of underline */
+  text-underline-offset: 6px; /* Space between text and underline */
+  text-decoration-color: var(--brown-dark); /* Color of underline */
+}
+
+.view-link:hover {
+  color: var(--brown);
+}
+
+.date {
+  font-size: 0.9em;
+  color: var(--brown);
+}
+
+.item-name {
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--brown-dark);
+  margin-top: 5px;
+}
