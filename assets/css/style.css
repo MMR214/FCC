@@ -791,10 +791,10 @@ nav a:hover {
 
 .youtube-overlay {
   position: relative;
-  background-image: url("/assets/images/Worship-Service.png");
+  background-image: url("../../assets/images/Worship-Service.png");
   /* Overlay using a linear-gradient for 40% black */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-    url("/assets/images/Worship-Service.png");
+    url("../../assets/images/Worship-Service.png");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -959,7 +959,7 @@ nav a:hover {
 }
 .verse-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("/assets/images/verse-bg.jpg"); /* Replace with your actual image path */
+    url("../../assets/images/verse-bg.jpg"); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   color: #f0e9bd;
@@ -996,7 +996,7 @@ nav a:hover {
 
 .newslettter-section {
   background-color: var(--brown); /* Light beige background */
-  background-image: url("/assets/images/Frame2215.png"); /* Optional: Add background patterns if available */
+  background-image: url("../../assets/images/Frame2215.png"); /* Optional: Add background patterns if available */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
