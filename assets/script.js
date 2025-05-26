@@ -38,3 +38,27 @@ $(function () {
     updateCarousel();
   });
 });
+
+// Animate progress bar
+(function () {
+  var bar = document.getElementById("preloader-bar");
+  var progress = 0;
+  var interval = setInterval(function () {
+    progress += Math.random() * 18 + 7; // random step for effect
+    if (progress > 100) progress = 100;
+    if (bar) bar.style.width = progress + "%";
+    if (progress >= 100) clearInterval(interval);
+  }, 220);
+})();
+
+window.addEventListener("load", function () {
+  var preloader = document.getElementById("preloader");
+  var bar = document.getElementById("preloader-bar");
+  if (bar) bar.style.width = "100%";
+  if (preloader) {
+    preloader.style.opacity = "0";
+    setTimeout(function () {
+      preloader.style.display = "none";
+    }, 3000);
+  }
+});
