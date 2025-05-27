@@ -1,3 +1,12 @@
+/*!
+ * FCC Website Javascript
+/*!
+ * script.js
+ * Author: M.R.
+ * Description: Main javascript file for the FCC Website.
+ * Last updated: 2025-27-2025
+ */
+
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 100) {
