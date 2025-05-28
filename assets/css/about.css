@@ -230,6 +230,7 @@
 }
 
 .statement-of-faith p {
+  font-size: var(--font-xl);
   font-weight: lighter;
   color: var(--brown-dark);
   font-size: var(--font-md);
@@ -272,7 +273,7 @@
 }
 
 .history-container {
-  background-color: rgba(246, 232, 207, 0.7);
+  background-color: rgba(246, 232, 207, 0.9);
   align-items: center;
   padding: 20px;
   max-width: 650px;
